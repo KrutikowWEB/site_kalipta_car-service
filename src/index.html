@@ -11,10 +11,7 @@
 
     <div class="wrapper">
         <header class="header">
-
-             <!-- навигационное меню -->
-
-            <!--  <nav>
+            <nav>
                 <div class="container">
                     <div class="menu">
                         <div class="menu__logo">
@@ -30,7 +27,7 @@
                                 <rect width="90" height="68.9381" fill="white"/>
                                 </clipPath>
                                 </defs>
-                                </svg>
+                            </svg>
                         </div>
                         <ul class="menu__list">
                             <li class="menu__item"><a href="#" class="menu__link">О нас</a></li>
@@ -46,10 +43,19 @@
                     <span></span>
                     <span></span>
                 </div>   
-            </nav> -->
-            
+            </nav>
         </header>
         <main class="main">
+            <section class="promo">
+                <div class="container">
+                    <h1 class="promo__title"></h1>
+                    <form class="promo__form" action="">
+                        <input name="service" type="text" required placeholder="Услуга">
+                        <input type="text" name="date"  required placeholder="Желаемая дата">
+                        <button class="promo__btn">Записаться</button>
+                    </form>
+                </div>
+            </section>
            <!--  подключение попап -->
            
            <!--  <div class="popup__bg"> 
@@ -154,9 +160,10 @@
     </div>
     
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
 </body>

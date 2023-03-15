@@ -1,7 +1,7 @@
 @import 'libs/bootstrap-reboot.min.scss';
 /* @import 'libs/slick.scss'; файл подключать когда надо, если не используется, то удалять */
 /* @import 'libs/animate.scss'; файл подключать когда надо, если не используется, то удалять */
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&family=Roboto:wght@400;700&display=swap');
 @import 'base/extends';
 @import 'base/variables';
 
@@ -9,6 +9,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Raleway', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, ul {
@@ -33,9 +34,10 @@ html, body{
 }
 
 .container{
-    width: 1140px;
+    width: 1320px;
     margin: 0 auto;
 }
+
 @import 'block/header';
 @import 'block/popap';
 @import 'block/accordion';
