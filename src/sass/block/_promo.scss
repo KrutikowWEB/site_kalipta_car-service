@@ -1,0 +1,50 @@
+.promo{
+    width: 100%;
+    background: url('../../img/promo/promo_bg.png') center center/ cover no-repeat;
+    padding: 152px 0 268px 0;
+    &__title{
+        width: 647px;
+        font-size: 64px;
+        line-height: 75px;
+        color: #FFFFFF;
+    }
+    &__form{
+        margin-top: 61px;
+        display: flex;
+        gap: 25px;
+    }
+    &__input{
+        width: 300px;
+        padding: 19.5px 0 19.5px 30px;
+        background: #F0F0F0;
+        border-radius: 10px;
+        border: none;
+        
+    }
+    &__input::placeholder{
+        font-weight: 500;
+        font-size: 18px;
+    }
+    &__input:focus{
+        color: red;
+    }
+    &__btn{
+        position: relative;
+        width: 230px;
+        padding: 19.5px 0 19.5px 30px;
+        background-color: $main-color;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../../icons/promo/calendar.svg');
+            width: 26.25px;
+            height: 29.17px;
+            top: 10px;
+            left: 10px;
+        }
+    }
+}
