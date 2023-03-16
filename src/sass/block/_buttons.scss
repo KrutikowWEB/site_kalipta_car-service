@@ -1,0 +1,17 @@
+.button{
+    position: relative;
+    width: 230px;
+    text-align: start;
+    background-color: $main-color;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    transition: all .2s;
+    &:hover{
+        background-color: #FFFFFF;
+        color: $main-color;
+        border: 1px solid #337AFF;
+    }
+}

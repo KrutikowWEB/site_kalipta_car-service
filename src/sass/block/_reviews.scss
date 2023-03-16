@@ -1,0 +1,80 @@
+.reviews{
+    width: 100%;
+    padding: 55px 0 110px 0;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 23px;
+    }
+    &__left{
+        display: flex;
+        flex-direction: column;
+        padding-right: 89px;
+    }
+    &__title{
+        &-h2{
+            margin-top: 57px;
+        }
+        &-h4{
+            margin-top: 34px;
+            width: 361px;
+        }
+    }
+    &__rating{
+        display: flex;
+        align-items: center;
+        margin-top: 34px;
+        background: #F0F0F0;
+        border-radius: 10px;
+        padding: 6px 36px 21px 29px;
+    }
+    &__point{
+        font-weight: 600;
+        font-size: 80px;
+        line-height: 94px;
+    }
+    &__grade{
+        margin-left: 12px;
+        margin-top: 7px;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+    &__stars{
+        display: flex;
+        gap: 2.9px;
+    }
+    &__quantity{
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 23px;
+    }
+    &__line{
+        margin-left: 18px;
+        width: 1px;
+        height: 52px;
+        border-radius: 10px;
+        background-color: $text-color;
+    }
+    &__yandex{
+        margin-left: 24px;
+    }
+    &__btn{
+        margin-top: 34px;
+        padding: 19.5px 0 19.5px 70px;
+        &::after{
+            content: '';
+            position: absolute;
+            background-image: url(../../icons/reviews/revievs_call.svg);
+            width: 26.25px;
+            height: 26.25px;
+            top: 17px;
+            left: 25px;
+        }
+        &:hover{
+            &::after{
+                background-image: url('../../icons/reviews/revievs_call-blue.png');
+            }
+        }
+    }
+}

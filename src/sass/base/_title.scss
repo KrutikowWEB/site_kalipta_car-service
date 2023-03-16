@@ -1,0 +1,15 @@
+.title{
+    &__h3{
+        position: relative;
+        @extend %title_h3;
+        color: $main-color;
+        @include before_line;
+    }
+    &__h2{
+        @extend %title_h2;
+        color: $text-color;
+    }
+    &__subtitle{
+        @extend %subtitle_h4;
+    }
+}

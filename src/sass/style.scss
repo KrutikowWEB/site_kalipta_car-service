@@ -4,12 +4,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&family=Roboto:wght@400;700&display=swap');
 @import 'base/extends';
 @import 'base/variables';
+@import 'base/mixins';
+@import 'base/title';
 
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 500;
 }
 
 h1, h2, h3, h4, h5, h6, p, a, ul {
@@ -42,5 +46,7 @@ html, body{
 @import 'block/popap';
 @import 'block/accordion';
 @import 'block/promo';
+@import 'block/buttons';
+@import 'block/reviews';
 
 @import 'base/media';

@@ -1,1 +1,19 @@
-%name {}
+%title_h2 {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 75px;
+/*     color: $text-color; */
+}
+
+%title_h3 {
+    margin-left: 113px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+/*     color: $main-color; */
+}
+
+%subtitle_h4{
+    font-size: 18px;
+    line-height: 130%;
+} 

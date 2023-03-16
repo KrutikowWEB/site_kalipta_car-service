@@ -6,6 +6,7 @@
         width: 647px;
         font-size: 64px;
         line-height: 75px;
+        font-weight: 600;
         color: #FFFFFF;
     }
     &__form{
@@ -24,27 +25,29 @@
     &__input::placeholder{
         font-weight: 500;
         font-size: 18px;
+        opacity: 0.5;
     }
     &__input:focus{
-        color: red;
-    }
-    &__btn{
-        position: relative;
-        width: 230px;
-        padding: 19.5px 0 19.5px 30px;
-        background-color: $main-color;
-        font-weight: 500;
         font-size: 18px;
         line-height: 21px;
-        color: #FFFFFF;
+        border: none;
+        outline: none;
+    }
+    &__btn{
+        padding: 19.5px 0 19.5px 91px;
         &::before{
             content: '';
             position: absolute;
             background-image: url('../../icons/promo/calendar.svg');
             width: 26.25px;
             height: 29.17px;
-            top: 10px;
-            left: 10px;
+            top: 15.5px;
+            left: 45px;
+        }
+        &:hover{
+            &::before{
+                background-image: url('../../icons/promo/calendar-blue.svg');
+            }
         }
     }
 }
