@@ -68,7 +68,6 @@ function boxHandler(e) {
   }
 }
 
-$('input[name=date] ').mask('9999-99-99');
 
 
 
