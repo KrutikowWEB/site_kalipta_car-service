@@ -14,4 +14,13 @@
         color: $main-color;
         border: 1px solid #337AFF;
     }
+    &_white{
+        border: 2px solid $main-color;
+        background-color: #FFFFFF;
+        color: $main-color;
+        &:hover{
+            background-color: $main-color;
+            color: #FFFFFF;
+        }
+    }
 }

@@ -77,4 +77,45 @@
             }
         }
     }
+    &__item{
+        padding: 20px 109px 20px 21px;
+        display: grid;
+        grid-template-columns: 125px 1fr;
+        column-gap: 31px;
+        border: 2px solid #337AFF;
+        border-radius: 10px;
+        &-left{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 17px;
+        }
+        &-name{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+        }
+        &-right{
+            margin-top: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+        &-text{
+            font-size: 16px;
+            line-height: 150%;
+        }
+        &-info{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 110px 1fr;
+            column-gap: 71px;
+            
+        }
+        &-date{
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 17px;
+        }
+    }
 }
