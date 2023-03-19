@@ -1,0 +1,25 @@
+.services{
+    width: 100%;
+    padding: 70px 0 108px;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 120px;
+    }
+    &__title{
+        &-h2{
+            margin-top: 116px;
+        }
+        &-h4{
+            margin-top: 30px;
+            width: 578px;
+        }
+    }
+    &__btn{
+        margin-top: 30px;
+        padding: 19.5px 65px;
+    }
+    &__right{
+        margin-top: 78px;
+    }
+}

@@ -1,5 +1,5 @@
 @import 'libs/bootstrap-reboot.min.scss';
-/* @import 'libs/slick.scss'; файл подключать когда надо, если не используется, то удалять */
+@import 'libs/slick.scss';
 /* @import 'libs/animate.scss'; файл подключать когда надо, если не используется, то удалять */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&family=Roboto:wght@400;700&display=swap');
 @import 'base/extends';
@@ -48,5 +48,7 @@ html, body{
 @import 'block/promo';
 @import 'block/buttons';
 @import 'block/reviews';
+@import 'block/why';
+@import 'block/services';
 
 @import 'base/media';

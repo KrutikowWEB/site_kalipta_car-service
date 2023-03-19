@@ -1,0 +1,28 @@
+.why{
+    width: 100%;
+    padding: 70px 0 110px;
+    &__list{
+        margin-top: 70px;
+        padding: 0 135px;
+        display: flex;
+        justify-content: space-between;
+        gap: 69px;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &-title{
+            margin-bottom: 50px;
+            font-weight: 600;
+            font-size: 96px;
+            line-height: 113px;
+            color: $main-color;
+        }
+        &-descr{
+            @extend %title_h3;
+            margin: 0;
+            text-align: center;
+        }
+    }
+}

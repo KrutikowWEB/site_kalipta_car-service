@@ -1,38 +1,61 @@
-.accordion{
-    &__box {
-        position: relative;
-        margin-bottom: 20px; /* Нижний отступ между элементами аккордеона */
+.accordion {
+    position: relative;
+    padding: 28px 0 28px 30px;
+    background-color: #FFFFFF;
+    border: 2px solid $main-color;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    transition: 0.2s;
+    span{
+        position: absolute;
+        top: 20px;
+        right: 30px;
+        width: 44px;
+        height: 44px;
+        border-radius: 100%;
+        background-color: $main-color;
+    }
+  }
+  .accordion::after {
+    content: '';
+    position: absolute;
+    background-image: url('../icons/services/services_plus.svg');
+    top: 29px;
+    right: 39px;
+    width: 26px;
+    height: 26px;
+  }
+  
+  .active:after {
+    content: '';
+    position: absolute;
+    background-image: url('../icons/services/services_plus.svg');
+    rotate: -45deg;
+    top: 29px;
+    right: 39px;
+    width: 26px;
+    height: 26px;
+  }
+  
+  .panel {
+    
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    &__list{
+        padding: 30px;
+        padding-left: 45px;
+        border: 2px solid $main-color;
+        border-radius: 10px;
+        background-color: #E7E7E7;
+
+    }
+    li{
+        margin-bottom: 20px;
         &:last-child{
-            margin-bottom: 0; /* Для последнего элемента нижний отступ убираем */
+            margin-bottom: 0;
         }
     }
-    &__label {
-        position: relative;
-        padding: 20px; /* Внутренний отступ для видимой части */
-        background-color: darkblue; /* Цвет элемента аккордеона */
-        color: #fff; /* Цвет шрифта элемента аккордеона */
-        cursor: pointer; /* Меняем курсор при наведении */
-        &::after{
-            content: "+"; /* Задаем иконку "+" для элемента аккордеона */
-            position: absolute;
-            top: 50%; /* Выравнивание по центру */
-            transform: translateY(-50%);
-            right: 20px;
-            font-size: 25px;
-            font-weight: bold;
-        }
-    }
-    &__content{
-        position: relative;
-        background-color: #fff; /* Цвет фона контента */
-        overflow: hidden;
-        max-height: 0; /* Скрываем контент */
-        transition: 0.3s; /* Для плавности анимации */
-        p{
-            padding: 20px;
-        }
-    }
-}
-.accordion__box.active .accordion__label::after {
-content: "\2014"; /* Меняем иконку на "-" при нажатии на элемент */
-}
+  }
