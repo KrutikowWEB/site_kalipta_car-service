@@ -24,7 +24,6 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-
 $('.gallery__slider').slick({
   infinite: true,
   slidesToShow: 3,
@@ -45,6 +44,7 @@ $('.about__slider').slick({
   infinite: true,
   slidesToShow: 4,
   slidesToScroll: 1,
+  variableWidth: true,
   prevArrow: '<button type="button" class="slick-next"><svg width="34" height="17" viewBox="0 0 34 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 2.025L18.3655 14.7297C17.5975 15.4453 16.4069 15.4454 15.6388 14.7299L2 2.025" stroke="#337AFF" stroke-width="3" stroke-linecap="round"/></svg></button>',
   nextArrow: '<button type="button" class="slick-prev"><svg width="34" height="17" viewBox="0 0 34 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 14.975L15.6345 2.27027C16.4025 1.55465 17.5931 1.55456 18.3612 2.27007L32 14.975" stroke="#337AFF" stroke-width="3" stroke-linecap="round"/></svg></button>',
 });

@@ -35,6 +35,7 @@
     }
     &__item{
         &-wrapper{
+            width: 100%;
             min-height: 125px;
             display: flex;
             align-items: center;
@@ -46,20 +47,24 @@
             z-index: 2;
             rotate: 90deg;
             position: absolute;
-            top: 27%;
-            right: -60px;
+            top: 80px;
+            right: -58px;
             width: 65px;
             transform: translateX(-50%);
             background-color: #FFF;
             border: none;
             transition: all .2s;
-            padding: 10px;
+            
             &:hover{
                 transform: scale(1.2) translateX(-40%);
             }
         }
         .slick-next{
-            left: 0;
+            left: -58px;
         }
     }
+}
+
+.slick-slide {
+    margin: 0 7.5px;
 }
