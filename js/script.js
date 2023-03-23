@@ -48,6 +48,41 @@ $('.about__slider').slick({
   prevArrow: '<button type="button" class="slick-next"><svg width="34" height="17" viewBox="0 0 34 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M32 2.025L18.3655 14.7297C17.5975 15.4453 16.4069 15.4454 15.6388 14.7299L2 2.025" stroke="#337AFF" stroke-width="3" stroke-linecap="round"/></svg></button>',
   nextArrow: '<button type="button" class="slick-prev"><svg width="34" height="17" viewBox="0 0 34 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 14.975L15.6345 2.27027C16.4025 1.55465 17.5931 1.55456 18.3612 2.27007L32 14.975" stroke="#337AFF" stroke-width="3" stroke-linecap="round"/></svg></button>',
 });
+
+$('input[name=phone]').mask("+7(999) 999-99-99");
+ 
+ /*  function validateForms(form){
+    $(form).validate({
+        rules: {
+            service: {
+                required: true,
+                minlength: 2
+            },
+            phone: "required",
+            email: {
+                required: true,
+                email: true
+            },
+            date: "required",
+        },
+        messages: {
+            service: {
+                required: "Пожалуйста, введите интересующие Вас услуги",
+                minlength: jQuery.validator.format("Введите {0} символа!")
+              },
+            phone: "Пожалуйста, введите свой номер телефона",
+            date: "Пожалуйста, введите удобную дату",
+            email: {
+              required: "Пожалуйста, введите свою почту",
+              email: "Неправильно введен адрес почты"
+            }
+        }
+    });
+  };
+  
+  validateForms('#Feedback form'); */
+
+
 /* Гамбургер и адаптивное меню */
 
 /* window.addEventListener('DOMContentLoaded', () => {
@@ -182,37 +217,7 @@ for (i = 0; i < acc.length; i++) {
 
 
 
-  /* validate */
   
-  /* function validateForms(form){
-    $(form).validate({
-        rules: {
-            name: {
-                required: true,
-                minlength: 2
-            },
-            phone: "required",
-            email: {
-                required: true,
-                email: true
-            }
-        },
-        messages: {
-            name: {
-                required: "Пожалуйста, введите свое имя",
-                minlength: jQuery.validator.format("Введите {0} символа!")
-              },
-            phone: "Пожалуйста, введите свой номер телефона",
-            email: {
-              required: "Пожалуйста, введите свою почту",
-              email: "Неправильно введен адрес почты"
-            }
-        }
-    });
-  };
-  
-  validateForms('#order form');
-  validateForms('#question form'); */
 
 
   /* validateForms('#consultation form'); //Если форм больше, то меняем ID и все
