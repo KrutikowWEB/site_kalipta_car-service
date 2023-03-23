@@ -6,6 +6,56 @@
         width: 100vw;
         margin-left: calc(50% - 50vw);
     }
+    &__location{
+        position: relative;
+    }
+    &__form{
+        position: absolute;
+        z-index: 2;
+        top: 108px;
+        padding: 52px 79px 85px 71px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        background: #FFFFFF;
+        box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+    &__input{
+        width: 500px;
+        margin-top: 15px;
+        &-title{
+            @extend %title_h3;
+            margin-left: 0;
+        }
+        &_footer{
+            width: 125px;
+        }
+        &-wrapper{
+            display: flex;
+            gap: 20px;
+        }
+    }
+    &__btn{
+        display: block;
+        width: 100%;
+        padding: 19.5px 97px 19.5px 152px;
+        margin-top: 15px;
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url('../icons/promo/calendar-blue.svg');
+            width: 26.25px;
+            height: 29.17px;
+            top: 15.5px;
+            left: 102px;
+        }
+        &:hover{
+            &::before{
+                background-image: url('../icons/promo/calendar.svg');
+            }
+        }
+    }
     &__list{
         margin-top: 60px;
         display: flex;

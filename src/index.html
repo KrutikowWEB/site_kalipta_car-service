@@ -49,7 +49,7 @@
             <section class="promo">
                 <div class="container">
                     <h1 class="promo__title">Отличный сервис, со специалистами которые знают свое дело</h1>
-                    <form class="promo__form" action="">
+                    <form class="promo__form" action="#">
                         <input class="promo__input" name="service" type="text" required placeholder="Услуга">
                         <input class="promo__input" type="text" name="date"  required placeholder="Желаемая дата">
                         <button class="button promo__btn">Записаться</button>
@@ -457,8 +457,32 @@
             <section class="contacts">
                 <div class="container">
                     <h3 class="title__h3">Контакты</h3>
-                    <div class="contacts__map">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3932.435037336588!2d37.5753710117676!3d55.673161984195545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1679556390977!5m2!1sru!2sby" width="100%" height="846px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="contacts__location" id="Feedback">
+                        <div class="contacts__map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3932.435037336588!2d37.5753710117676!3d55.673161984195545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sby!4v1679556390977!5m2!1sru!2sby" width="100%" height="846px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <form class="contacts__form"  action="#" >
+                            <div class="contacts__form-item">
+                                <h3 class="contacts__input-title">Email</h3>
+                                <input class="promo__input contacts__input" name="email" type="text" required placeholder="example@kalipta.ru">
+                            </div>
+                            <div class="contacts__form-item">
+                                <h3 class="contacts__input-title">Телефон</h3>
+                                <input class="promo__input contacts__input" name="phone" type="phone"  required placeholder="8 (800) 555-35-35">
+                            </div>
+                            <div class="contacts__form-item">
+                                <h3 class="contacts__input-title">Услуга</h3>
+                                <input class="promo__input contacts__input" name="service" type="text" required placeholder="Помыть машину и проверить масло">
+                            </div>
+                            <div class="contacts__form-item">
+                                <h3 class="contacts__input-title">Дата</h3>
+                                <div class="contacts__input-wrapper">
+                                    <input class="promo__input contacts__input contacts__input_footer" name="date" type="text" required placeholder="23.02.23">
+                                    <button class="button button_white contacts__btn">Записаться</button>
+                                </div>
+                            </div>
+                            
+                        </form>
                     </div>
                     <div class="contacts__list">
                         <div class="contacts__item">
