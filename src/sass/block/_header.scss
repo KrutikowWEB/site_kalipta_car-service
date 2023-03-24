@@ -13,6 +13,17 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &__icon{
+        &-svg{
+            transition: all .1s;
+        }
+        &:hover{
+            .menu__icon-svg{
+                fill: $main-color;
+            }
+        }
+    }
+
     &__list{
         display: flex;
         margin-left: auto;
@@ -31,7 +42,7 @@ nav{
         color: $text-color;
         transition: all .2s;
         &:hover{
-            font-weight: 700;
+            text-shadow: 1px 0 1px black;
             color: $text-color;
             text-decoration: none;
         }
