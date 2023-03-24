@@ -50,38 +50,27 @@ $('.about__slider').slick({
 });
 
 $('input[name=phone]').mask("+7(999) 999-99-99");
- 
- /*  function validateForms(form){
-    $(form).validate({
-        rules: {
-            service: {
-                required: true,
-                minlength: 2
-            },
-            phone: "required",
-            email: {
-                required: true,
-                email: true
-            },
-            date: "required",
-        },
-        messages: {
-            service: {
-                required: "Пожалуйста, введите интересующие Вас услуги",
-                minlength: jQuery.validator.format("Введите {0} символа!")
-              },
-            phone: "Пожалуйста, введите свой номер телефона",
-            date: "Пожалуйста, введите удобную дату",
-            email: {
-              required: "Пожалуйста, введите свою почту",
-              email: "Неправильно введен адрес почты"
-            }
-        }
-    });
-  };
-  
-  validateForms('#Feedback form'); */
 
+$('[data-modal=order]').on('click', function() {
+  $('.modal_order').fadeIn(400);
+});
+$('.close').on('click', function() {
+  $('.modal_order').fadeOut(400);
+});
+
+
+$('[data-modal=enroll]').on('click', function() {
+  $('.modal_enroll').fadeIn(400);
+});
+$('.close').on('click', function() {
+  $('.modal_enroll').fadeOut(400);
+});
+
+$('a[href^="#"]').click(function(){
+  var target = $(this).attr('href');
+  $('html, body').animate({scrollTop: $(target).offset().top}, 800);
+  return false;
+  });
 
 /* Гамбургер и адаптивное меню */
 
@@ -102,57 +91,6 @@ $('input[name=phone]').mask("+7(999) 999-99-99");
       })
   })
 }) */
-
-/* Попап */
-
-/* let popupBg = document.querySelector('.popup__bg'); // Фон попап окна
-let popup = document.querySelector('.popup'); // Само окно
-let openPopupButtons = document.querySelectorAll('.open-popup'); // Кнопки для показа окна
-let closePopupButton = document.querySelector('.close-popup'); // Кнопка для скрытия окна
-
-openPopupButtons.forEach((button) => { // Перебираем все кнопки
-  button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
-      e.preventDefault(); // Предотвращаем дефолтное поведение браузера
-      popupBg.classList.add('active'); // Добавляем класс 'active' для фона
-      popup.classList.add('active'); // И для самого окна
-  })
-});
-
-closePopupButton.addEventListener('click',() => { // Вешаем обработчик на крестик
-  popupBg.classList.remove('active'); // Убираем активный класс с фона
-  popup.classList.remove('active'); // И с окна
-});
-
-document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
-  if(e.target === popupBg) { // Если цель клика - фот, то:
-      popupBg.classList.remove('active'); // Убираем активный класс с фона
-      popup.classList.remove('active'); // И с окна
-  }
-}); */
-
-/* accordion */
-
-/* const boxes = Array.from(document.querySelectorAll(".accordion__box")); // считываем все элементы аккордеона в массив
-
-boxes.forEach((box) => {
-  box.addEventListener("click", boxHandler); // при нажатии на бокс вызываем ф-ию boxHanlder
-});
-
-function boxHandler(e) {
-  e.preventDefault(); // сбрасываем стандартное поведение
-  let currentBox = e.target.closest(".accordion__box"); // определяем текущий бокс
-  let currentContent = e.target.nextElementSibling; // находим скрытый контент
-  currentBox.classList.toggle("active"); // присваиваем ему активный класс
-  if (currentBox.classList.contains("active")) {
-    // если класс активный ..
-    currentContent.style.maxHeight = currentContent.scrollHeight + "px"; // открываем контент
-  } else {
-    // в противном случае
-    currentContent.style.maxHeight = 0; // скрываем контент
-  }
-} */
-
-
 
 
 //SLick-slider где при нажатии на конкретную кнопку выходит конкретный слайд!!!! Крутая вещь!!
@@ -182,43 +120,6 @@ function boxHandler(e) {
 
 
 
-//аккордеон
-
-/* var acc = document.getElementsByClassName("accordion");
-var i;
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    } 
-  });
-}
- */
-
-
-
-
-
-
-/* popap */
-
-/* $('[data-modal=order]').on('click', function() {
-    $('.overlay, #order').fadeIn(400);
-  });
-  $('.modal__close').on('click', function() {
-    $('.overlay, #order').fadeOut(400);
-  }); */
-  
-
-
-
-
-  
-
 
   /* validateForms('#consultation form'); //Если форм больше, то меняем ID и все
   validateForms('#order form'); */
@@ -245,15 +146,3 @@ for (i = 0; i < acc.length; i++) {
     return false;
   }); */
   
-  
-  
-
-
-
-  // мой скрипт для возврата на блок с определенным id и определенным классом
-  // здесь data-modal=back - дата-атрибут кнопки(присвоили в HTML), при нажатии которой будет возврат на страницу
-  // .overlay, #backup - класс блока и id блока с которого мы уходим
-  /* 
-  $('[data-modal=back]').on('click', function() {
-    $('.overlay, #backup').fadeOut(400);
-  }); */
